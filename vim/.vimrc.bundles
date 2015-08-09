@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 " Appearance
-"Plug 'mhumeSF/one-dark.vim'
 Plug 'gosukiwi/vim-atom-dark'
 Plug 'nathanaelkane/vim-indent-guides'
 
@@ -20,9 +19,11 @@ Plug 'tpope/vim-fugitive'
 
 " Syntax checking
 Plug 'scrooloose/syntastic'
+Plug 'ntpeters/vim-better-whitespace'
 
 
 " Language-specific plugins
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }

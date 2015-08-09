@@ -2,10 +2,6 @@
 set nocompatible
 
 
-" enable syntax highlighting
-syntax enable
-
-
 " configure vim-plug
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -18,10 +14,9 @@ if filereadable(expand("~/.vimrc.colors"))
 endif
 
 
+" set all default configs
 filetype plugin indent on
 
-
-" set all default configs
 set autoindent
 set autoread
 set backspace=2
@@ -46,11 +41,14 @@ set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu
 set wildmode=longest,list,full
 
+
 " Enable basic mouse behavior such as resizing buffers.
 set mouse=a
-if exists('$TMUX')  " Support resizing in tmux
+
+if !has('nvim') && exists('$TMUX')  " Support resizing in tmux
   set ttymouse=xterm2
 endif
+
 
 " keyboard shortcuts
 let mapleader = ','
@@ -71,13 +69,18 @@ nnoremap <leader>g :GitGutterToggle<CR>
 nnoremap <leader>c <Plug>Kwbd
 noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
+
 " in case you forgot to sudo
 cnoremap w!! %!sudo tee > /dev/null %
+
 
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
+let NERDTreeShowHidden=1
+let ToggleStripWhitespaceOnSave=1
 let g:gitgutter_enabled = 0
+
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
@@ -88,14 +91,17 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
+
 " fdoc is yaml
 autocmd BufRead,BufNewFile *.fdoc set filetype=yaml
 " md is markdown
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.md set spell
 
+
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
+
 
 " Fix Cursor in TMUX
 if exists('$TMUX')
@@ -106,20 +112,25 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
+
 " Don't copy the contents of an overwritten selection.
 vnoremap p "_dP
+
 
 " Wrap arrow keys between lines
 set whichwrap+=<,>,h,l,[,]
 
 set nocursorline " don't highlight current line
 
+
 " keyboard shortcuts
 inoremap jj <ESC>
+
 
 " highlight search
 "set hlsearch
 "nmap <leader>hl :let @/ = ""<CR>
+
 
 " Disambiguate ,a & ,t from the Align plugin, making them fast again.
 "
