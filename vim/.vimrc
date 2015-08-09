@@ -1,6 +1,7 @@
 " Disable vi compatibility
 set nocompatible
 
+
 " enable syntax highlighting
 syntax enable
 
@@ -10,6 +11,11 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
+
+" configure appearance
+if filereadable(expand("~/.vimrc.colors"))
+  source ~/.vimrc.colors
+endif
 
 
 " ensure ftdetect et al work by including this after the Vundle stuff
@@ -86,13 +92,7 @@ autocmd BufRead,BufNewFile *.fdoc set filetype=yaml
 " md is markdown
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.md set spell
-" extra rails.vim help
-autocmd User Rails silent! Rnavcommand decorator      app/decorators            -glob=**/* -suffix=_decorator.rb
-autocmd User Rails silent! Rnavcommand observer       app/observers             -glob=**/* -suffix=_observer.rb
-autocmd User Rails silent! Rnavcommand feature        features                  -glob=**/* -suffix=.feature
-autocmd User Rails silent! Rnavcommand job            app/jobs                  -glob=**/* -suffix=_job.rb
-autocmd User Rails silent! Rnavcommand mediator       app/mediators             -glob=**/* -suffix=_mediator.rb
-autocmd User Rails silent! Rnavcommand stepdefinition features/step_definitions -glob=**/* -suffix=_steps.rb
+
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
 
@@ -136,6 +136,3 @@ endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
 
-" Bind keys to run the current file
-nmap <F9> :SCCompile<cr>
-nmap <F10> :SCCompileRun<cr>
