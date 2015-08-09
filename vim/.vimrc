@@ -1,4 +1,4 @@
-" Disable vi compatibility
+" disable vi compatibility
 set nocompatible
 
 
@@ -18,9 +18,10 @@ if filereadable(expand("~/.vimrc.colors"))
 endif
 
 
-" ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
 
+
+" set all default configs
 set autoindent
 set autoread
 set backspace=2

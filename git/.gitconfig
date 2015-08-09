@@ -12,3 +12,5 @@
   last = log -1 --stat
   unstage = reset HEAD --
   cached = diff --cached
+[push]
+	default = simple
