@@ -5,7 +5,7 @@
 
 # screenshots
 
-[screenshot]: screenshot.png
+![screenshot](https://raw.githubusercontent.com/kvchen/.dotfiles/master/screenshot.png)
 
 # management
 
