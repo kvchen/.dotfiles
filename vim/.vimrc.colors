@@ -1,2 +1,7 @@
 syntax on
 colorscheme atom-dark
+
+" Set the ruler to mark past 80 lines
+let &colorcolumn=join(range(81,999),",")
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+

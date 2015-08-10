@@ -80,6 +80,7 @@ let g:NERDSpaceDelims=1
 let NERDTreeShowHidden=1
 let ToggleStripWhitespaceOnSave=1
 let g:gitgutter_enabled = 0
+autocmd FileType python setlocal completeopt-=preview
 
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
