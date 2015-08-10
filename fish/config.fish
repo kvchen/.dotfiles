@@ -7,3 +7,4 @@ set fish_greeting ""
 # Set environment variables
 #set -x NVIM_TUI_ENABLE_TRUE_COLOR 1
 
+eval "bash ~/.bash/base16-eighties.dark.sh"

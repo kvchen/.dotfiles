@@ -1,7 +1,9 @@
 call plug#begin('~/.vim/plugged')
 
 " Appearance
-Plug 'gosukiwi/vim-atom-dark'
+"Plug 'jpo/vim-railscasts-theme'
+"Plug 'jnurmine/Zenburn'
+Plug 'chriskempson/base16-vim'
 Plug 'nathanaelkane/vim-indent-guides'
 
 
