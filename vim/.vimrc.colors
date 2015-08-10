@@ -8,3 +8,4 @@ colorscheme base16-eighties
 " Set the ruler to mark past 80 lines
 let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=235
+
