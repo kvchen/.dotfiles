@@ -7,7 +7,7 @@ set fish_greeting ""
 # Set environment variables
 #set -x NVIM_TUI_ENABLE_TRUE_COLOR 1
 
-eval "bash ~/.bash/base16-eighties.dark.sh"
+eval "bash ~/.bash/base16-monokai.dark.sh"
 
 if test $TERM != "screen"
   tmux attach -t tmux; or tmux new -s tmux

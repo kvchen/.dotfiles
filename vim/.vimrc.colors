@@ -3,7 +3,8 @@ syntax on
 " Make sure the background on our colorscheme is set to dark
 set background=dark
 let base16colorspace=256
-colorscheme base16-eighties
+colorscheme base16-monokai
+"colorscheme base16-mocha
 
 " Set the ruler to mark past 80 lines
 let &colorcolumn=join(range(81,999),",")
