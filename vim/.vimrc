@@ -1,5 +1,6 @@
 " disable vi compatibility
 set nocompatible
+set shell=/bin/bash
 
 
 " configure vim-plug
@@ -32,11 +33,11 @@ set listchars=tab:▸\ ,trail:▫
 set number
 set ruler
 set scrolloff=3
-set shiftwidth=2
+set shiftwidth=4
 set showcmd
 set smartcase
-set softtabstop=2
-set tabstop=8
+set softtabstop=4
+set tabstop=4
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu
 set wildmode=longest,list,full
@@ -148,4 +149,7 @@ function! s:RemoveConflictingAlignMaps()
 endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
+
+" Enable Markdown code block highlighting
+let g:markdown_fenced_languages = ['python', 'py=python']
 

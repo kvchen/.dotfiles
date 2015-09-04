@@ -7,7 +7,14 @@ set fish_greeting ""
 # Set environment variables
 #set -x NVIM_TUI_ENABLE_TRUE_COLOR 1
 
-eval "bash ~/.bash/base16-monokai.dark.sh"
+eval "bash ~/.bash/base16-eighties.dark.sh"
+
+set -gx PATH /usr/local/bin $PATH
+
+set -x DOCKER_HOST tcp://192.168.59.103:2376
+set -x DOCKER_CERT_PATH /Users/kevinchen/.boot2docker/certs/boot2docker-vm
+set -x DOCKER_TLS_VERIFY 1
+
 
 if test $TERM != "screen"
   tmux attach -t tmux; or tmux new -s tmux
