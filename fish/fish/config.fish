@@ -9,13 +9,15 @@ set fish_greeting ""
 
 eval "bash ~/.bash/base16-eighties.dark.sh"
 
-set -gx PATH /usr/local/bin $PATH
+set -gx PATH /usr/local/bin /usr/texbin $PATH
 
 set -x DOCKER_HOST tcp://192.168.59.103:2376
 set -x DOCKER_CERT_PATH /Users/kevinchen/.boot2docker/certs/boot2docker-vm
 set -x DOCKER_TLS_VERIFY 1
 
 
-if test $TERM != "screen"
-  tmux attach -t tmux; or tmux new -s tmux
+switch $TERM
+    case '!(*screen*)'
+        tmux attach -t tmux; or tmux new -s tmux
 end
+
