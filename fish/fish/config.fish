@@ -17,7 +17,8 @@ set -x DOCKER_TLS_VERIFY 1
 
 
 switch $TERM
-    case '!(*screen*)'
+    case '*screen*'
+    case '*'
         tmux attach -t tmux; or tmux new -s tmux
 end
 
