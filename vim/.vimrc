@@ -153,3 +153,4 @@ silent! autocmd VimEnter * RemoveConflictingAlignMaps
 " Enable Markdown code block highlighting
 let g:markdown_fenced_languages = ['python', 'py=python']
 
+autocmd FileType python setlocal completeopt-=preview
