@@ -14,7 +14,7 @@ set -x DOCKER_HOST tcp://192.168.59.103:2376
 set -x DOCKER_CERT_PATH /Users/kevinchen/.boot2docker/certs/boot2docker-vm
 set -x DOCKER_TLS_VERIFY 1
 
-eval "bash ~/.bash/base16-eighties.dark.sh"
+eval "bash ~/.config/fish/base16-eighties.dark.sh"
 
 #switch $TERM
 #    case '*screen*'
