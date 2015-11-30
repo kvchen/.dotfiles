@@ -1,14 +1,14 @@
 # Disable fish greeting
 set fish_greeting ""
 
-function my_vi_key_bindings
-    fish_vi_key_bindings
-    bind -M insert \cl 'clear; commandline -f repaint'
-end
+#function my_vi_key_bindings
+#    fish_vi_key_bindings
+#    bind -M insert \cl 'clear; commandline -f repaint'
+#end
 
-fish_vi_mode
+#fish_vi_mode
 
-set -g fish_key_bindings my_vi_key_bindings
+#set -g fish_key_bindings my_vi_key_bindings
 
 # Aliases
 alias vim="nvim"
