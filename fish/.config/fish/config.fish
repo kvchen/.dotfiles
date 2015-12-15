@@ -12,7 +12,6 @@ set fish_greeting ""
 
 # Aliases
 alias vim="nvim"
-alias pip3up="pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U"
 
 # Set environment variables
 set -x NVIM_TUI_ENABLE_TRUE_COLOR 1
@@ -31,6 +30,4 @@ eval "bash ~/.config/fish/base16-eighties.dark.sh"
 #    case '*'
 #        tmux attach -t tmux; or tmux new -s tmux
 #end
-
-test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
