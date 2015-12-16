@@ -1,5 +1,5 @@
 # Player options
 player=mpv
 player-no-close
-default-stream=best
+default-stream=medium,high
 
