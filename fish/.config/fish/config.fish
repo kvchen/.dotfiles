@@ -12,6 +12,7 @@ set fish_greeting ""
 
 # Aliases
 alias vim="nvim"
+alias py="ptipython"
 
 # Set environment variables
 set -x NVIM_TUI_ENABLE_TRUE_COLOR 1
@@ -23,7 +24,7 @@ set -x DOCKER_HOST tcp://192.168.59.103:2376
 set -x DOCKER_CERT_PATH /Users/kevinchen/.boot2docker/certs/boot2docker-vm
 set -x DOCKER_TLS_VERIFY 1
 
-eval "bash ~/.config/fish/base16-eighties.dark.sh"
+#eval "bash ~/.config/fish/base16-eighties.dark.sh"
 
 #switch $TERM
 #    case '*screen*'

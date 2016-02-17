@@ -154,4 +154,5 @@ silent! autocmd VimEnter * RemoveConflictingAlignMaps
 let g:markdown_fenced_languages = ['python', 'py=python']
 
 autocmd FileType python setlocal completeopt-=preview
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
