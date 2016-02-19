@@ -150,8 +150,14 @@ endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
 
-" Enable Markdown code block highlighting
-let g:markdown_fenced_languages = ['python', 'py=python']
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_folding_disabled = 1
 
 autocmd FileType python setlocal completeopt-=preview
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2

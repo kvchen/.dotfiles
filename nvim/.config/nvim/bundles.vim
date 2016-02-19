@@ -1,11 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " Appearance
-"Plug 'jpo/vim-railscasts-theme'
-"Plug 'jnurmine/Zenburn'
-Plug 'chriskempson/base16-vim'
+Plug 'morhetz/gruvbox'
 Plug 'nathanaelkane/vim-indent-guides'
-
 
 " Interface
 Plug 'christoomey/vim-tmux-navigator'
@@ -27,13 +24,15 @@ Plug 'ntpeters/vim-better-whitespace'
 
 " Language-specific plugins
 Plug 'darthmall/vim-vue'
-" Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-" Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'reedes/vim-pencil', { 'for': 'markdown' }
+" Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 
 
 " Commands
@@ -45,18 +44,7 @@ Plug 'xuhdev/SingleCompile'
 Plug 'tpope/vim-commentary'
 
 
-" Disabled for now
-" Bundle 'eventualbuddha/vim-protobuf'
-" Bundle 'majutsushi/tagbar'
-" Bundle 'MarcWeber/vim-addon-mw-utils'
-" Bundle 'tomtom/tlib_vim'
-" Bundle 'tpope/vim-endwise'
-" Bundle 'tpope/vim-pastie'
-" Bundle 'tpope/vim-ragtag'
-" Bundle 'tpope/vim-repeat'
-" Bundle 'tpope/vim-surround'
-" Bundle 'tpope/vim-unimpaired'
-" Bundle 'vim-scripts/Align'
-
+" Graphical
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
