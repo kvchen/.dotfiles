@@ -3,6 +3,7 @@ syntax on
 " Make sure the background on our colorscheme is set to dark
 set background=dark
 colorscheme gruvbox
+autocmd BufEnter *.md colorscheme pencil
 
 " Ensure that we're using a glorious 256-color workspace
 let base16colorspace=256

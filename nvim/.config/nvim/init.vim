@@ -121,7 +121,6 @@ vnoremap p "_dP
 
 " Wrap arrow keys between lines
 set whichwrap+=<,>,h,l,[,]
-
 set nocursorline " don't highlight current line
 
 
@@ -130,8 +129,8 @@ inoremap jj <ESC>
 
 
 " highlight search
-"set hlsearch
-"nmap <leader>hl :let @/ = ""<CR>
+set hlsearch
+nmap <leader>hl :let @/ = ""<CR>
 
 
 " Disambiguate ,a & ,t from the Align plugin, making them fast again.
@@ -150,6 +149,8 @@ endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
 
+let g:pencil#wrapModeDefault = 'soft'
+
 augroup pencil
   autocmd!
   autocmd FileType markdown,mkd call pencil#init()
@@ -161,4 +162,15 @@ let g:vim_markdown_folding_disabled = 1
 
 autocmd FileType python setlocal completeopt-=preview
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
