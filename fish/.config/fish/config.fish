@@ -1,18 +1,7 @@
 # Disable fish greeting
+
 set fish_greeting ""
 
-#function my_vi_key_bindings
-#    fish_vi_key_bindings
-#    bind -M insert \cl 'clear; commandline -f repaint'
-#end
-
-#fish_vi_mode
-
-#set -g fish_key_bindings my_vi_key_bindings
-
-# Aliases
-alias vim="nvim"
-alias py="ptipython"
 
 # Set environment variables
 set -x NVIM_TUI_ENABLE_TRUE_COLOR 1
@@ -24,7 +13,17 @@ set -x DOCKER_HOST tcp://192.168.59.103:2376
 set -x DOCKER_CERT_PATH /Users/kevinchen/.boot2docker/certs/boot2docker-vm
 set -x DOCKER_TLS_VERIFY 1
 
-#eval "bash ~/.config/fish/base16-eighties.dark.sh"
+
+# Aliases
+
+alias vim="nvim"
+alias py="ptpython"
+
+
+# For faster shitposting
+
+alias goodshit="echo '👌👀👌👀👌👀👌👀👌👀 good shit go౦ԁ sHit👌 thats ✔ some good👌👌shit right👌👌there👌👌👌 right✔there ✔✔if i do ƽaү so my self 💯 i say so 💯 thats what im talking about right there right there (chorus: ʳᶦᵍʰᵗ ᵗʰᵉʳᵉ) mMMMMᎷМ💯 👌👌 👌НO0ОଠOOOOOОଠଠOoooᵒᵒᵒᵒᵒᵒᵒᵒᵒ👌 👌👌 👌 💯 👌 👀 👀 👀 👌👌Good shit'"
+
 
 #switch $TERM
 #    case '*screen*'
