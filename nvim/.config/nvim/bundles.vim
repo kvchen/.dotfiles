@@ -3,6 +3,8 @@ call plug#begin('~/.config/nvim/plugged')
 " Appearance
 Plug 'morhetz/gruvbox'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'reedes/vim-colors-pencil', { 'for' : 'markdown' }
+
 
 " Interface
 Plug 'christoomey/vim-tmux-navigator'
@@ -32,10 +34,9 @@ Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-Plug 'vim-pandoc/vim-pandoc', { 'for': 'markdown' }
-Plug 'vim-pandoc/vim-pandoc-syntax', { 'for': 'markdown' }
 Plug 'reedes/vim-pencil', { 'for': 'markdown' }
-Plug 'reedes/vim-colors-pencil', { 'for' : 'markdown' }
+Plug 'vim-pandoc/vim-pandoc' ", { 'for': 'markdown' }
+Plug 'vim-pandoc/vim-pandoc-syntax' ", { 'for': 'markdown' }
 
 
 " Commands
