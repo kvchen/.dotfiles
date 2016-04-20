@@ -1,32 +1,15 @@
 ```
-
 $ ~/.dotfiles
 
-╔════════╗
-║ about  ║ custom linux config files
-║ author ║ keffcat <keffcat@gmail.com>
-║ code   ║ https://github.com/kvchen/.dotfiles
-╚════════╝
+bash         > helper scripts for setting up shell environment
+fish         > fish shell settings and aliases
+git          > global git config and aliases
+livestreamer > sets quality and player
+neovim       > cool plugins and sensible defaults
+ptpython     > interpreter colorscheme and keybindings
 
-bash  > helper scripts for setting up shell environment
-fish  > fish shell settings and aliases
-git   > global git config and aliases
-tmux  > terminal multiplexer with custom status bar
-vim   > cool plugins and sensible defaults
-
+includes     > additional colorschemes and scripts
 ```
-
-## table of contents
-
-- [introduction](#introduction)
-- [installing](#installing)
-- [screenshots](#screenshots)
-
-
-
-# screenshots
-
-![screenshot](https://raw.githubusercontent.com/kvchen/.dotfiles/master/screenshot.png)
 
 # management
 
@@ -39,4 +22,8 @@ GNU Stow is available from most package managers.
 * `brew install stow`
 * `pacman -S stow`
 * `apt-get install stow`
+
+## installation
+
+First, make sure that a `~/.config` directory exists on the local machine. To symlink dotfiles to your local machine from this repository, run `stow <application>` from the repository directory.
 
