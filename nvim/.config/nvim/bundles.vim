@@ -13,6 +13,8 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'rking/ag.vim'
 Plug 'ervandew/supertab'
 Plug 'vim-airline/vim-airline'
+Plug 'ryanss/vim-hackernews'
+
 
 " Git plugins
 Plug 'airblade/vim-gitgutter'

@@ -149,6 +149,10 @@ endfunction
 command! -nargs=0 RemoveConflictingAlignMaps call s:RemoveConflictingAlignMaps()
 silent! autocmd VimEnter * RemoveConflictingAlignMaps
 
+" Force Jedi to use Python 3 by default
+let g:jedi#force_py_version=3
+
+" Vim-pencil options
 let g:pencil#wrapModeDefault = 'soft'
 
 augroup pencil
