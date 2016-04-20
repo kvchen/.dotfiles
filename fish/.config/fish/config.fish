@@ -23,10 +23,6 @@ alias py="ptpython"
 # For faster shitposting
 
 alias goodshit="echo '👌👀👌👀👌👀👌👀👌👀 good shit go౦ԁ sHit👌 thats ✔ some good👌👌shit right👌👌there👌👌👌 right✔there ✔✔if i do ƽaү so my self 💯 i say so 💯 thats what im talking about right there right there (chorus: ʳᶦᵍʰᵗ ᵗʰᵉʳᵉ) mMMMMᎷМ💯 👌👌 👌НO0ОଠOOOOOОଠଠOoooᵒᵒᵒᵒᵒᵒᵒᵒᵒ👌 👌👌 👌 💯 👌 👀 👀 👀 👌👌Good shit'"
-
-#switch $TERM
-#    case '*screen*'
-#    case '*'
-#        tmux attach -t tmux; or tmux new -s tmux
-#end
+alias cracksheen="echo 'https://i.imgur.com/4ncvZH7.gif'"
+alias lowqualitybait="echo 'https://i.imgur.com/EjJopdb.jpg'"
 
