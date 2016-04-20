@@ -1,17 +1,20 @@
 [user]
-  name = Kevin Chen
-  email = kvchen@berkeley.edu
+    email = keffcat@gmail.com
+    name = Kevin Chen
+    signingkey = BB63A8CD
 
 [pull]
-  rebase = true
+    rebase = true
 
 [alias]
-  sync = !git fetch origin && git rebase origin/master
-  graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
-  stat = status -sb
-  last = log -1 --stat
-  unstage = reset HEAD --
-  cached = diff --cached
+    graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
+    stat = status -sb
+    last = log -1 --stat
+    unstage = reset HEAD --
+    cached = diff --cached
 
 [push]
-  default = simple
+    default = simple
+
+[commit]
+    gpgsign = true
