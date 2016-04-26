@@ -1,0 +1,80 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        red: 239
+        green: 83
+        blue: 80
+        alpha: 1
+      accentColor:
+        red: 89
+        green: 252
+        blue: 255
+        alpha: 1
+      genAccent: true
+      predefinedColor: "Red"
+    fonts: {}
+    tabs: {}
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+  core:
+    disabledPackages: [
+      "markdown-preview"
+      "language-python"
+      "wrap-guide"
+    ]
+    themes: [
+      "atom-material-ui"
+      "gruvbox"
+    ]
+  editor:
+    fontSize: 13
+    invisibles: {}
+    tabLength: 4
+  "exception-reporting":
+    userId: "912b533a-c6dc-b16d-418b-5c8a9154838d"
+  latex:
+    buildOnSave: true
+    enableShellEscape: true
+    openResultAfterBuild: false
+    openResultInBackground: false
+    skimPath: "~/Applications/Skim.app"
+  "latex-plus":
+    texBin: "/Library/TeX/texbin/latexmk"
+  linter:
+    errorPanelHeight: 26
+    statusIconScope: "File"
+  "linter-clang":
+    execPath: "/usr/bin/clang"
+  "linter-gcc":
+    gccLintOnTheFly: true
+  "markdown-preview-plus":
+    enableLatexRenderingByDefault: true
+  minimap: {}
+  "multi-wrap-guide":
+    locked: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "vim-mode":
+    wrapLeftRightMotion: true
+  welcome:
+    showOnStartup: false
+".cpp.source":
+  editor:
+    preferredLineLength: 120
+    tabLength: 2
+  "multi-wrap-guide":
+    columns: [
+      80
+      120
+    ]
+".python.source":
+  editor:
+    preferredLineLength: 80
+  "multi-wrap-guide":
+    columns: [
+      80
+      120
+    ]

@@ -1,0 +1,7 @@
+.apm
+.node-gyp
+blob-store
+storage
+themes
+packages
+compile-cache
