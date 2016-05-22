@@ -20,10 +20,23 @@
     ui:
       panelContrast: true
   core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "markdown-preview"
       "language-python"
       "wrap-guide"
+      "tree-view"
     ]
     themes: [
       "atom-material-ui"
@@ -32,9 +45,11 @@
   editor:
     fontSize: 13
     invisibles: {}
-    tabLength: 4
+    tabLength: 2
   "exception-reporting":
     userId: "912b533a-c6dc-b16d-418b-5c8a9154838d"
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
   latex:
     buildOnSave: true
     enableShellEscape: true
@@ -52,19 +67,29 @@
     gccLintOnTheFly: true
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
+    enablePandoc: true
   minimap: {}
   "multi-wrap-guide":
     locked: true
+  nuclide:
+    installRecommendedPackages: true
+    "nuclide-home":
+      showHome: false
+    "nuclide-python":
+      pathToPython: "/usr/local/bin/python3"
   "tree-view":
     hideVcsIgnoredFiles: true
   "vim-mode":
     wrapLeftRightMotion: true
   welcome:
     showOnStartup: false
+".c.source":
+  editor:
+    tabLength: 4
 ".cpp.source":
   editor:
     preferredLineLength: 120
-    tabLength: 2
+    tabLength: 4
   "multi-wrap-guide":
     columns: [
       80

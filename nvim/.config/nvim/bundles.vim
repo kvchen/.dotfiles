@@ -7,6 +7,7 @@ Plug 'reedes/vim-colors-pencil', { 'for' : 'markdown' }
 
 
 " Interface
+Plug 'justinmk/vim-sneak'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -28,6 +29,7 @@ Plug 'scrooloose/nerdcommenter'
 
 
 " Language-specific plugins
+Plug 'tikhomirov/vim-glsl'
 Plug 'darthmall/vim-vue'
 " Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }

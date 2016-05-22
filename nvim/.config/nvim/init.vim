@@ -1,5 +1,6 @@
 " disable vi compatibility
 set nocompatible
+" set termguicolors
 set shell=/bin/bash
 
 
