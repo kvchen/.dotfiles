@@ -77,6 +77,9 @@
       showHome: false
     "nuclide-python":
       pathToPython: "/usr/local/bin/python3"
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
   "tree-view":
     hideVcsIgnoredFiles: true
   "vim-mode":
