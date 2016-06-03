@@ -1,29 +1,16 @@
 ```
 $ ~/.dotfiles
-
-bash         > helper scripts for setting up shell environment
-fish         > fish shell settings and aliases
-git          > global git config and aliases
-livestreamer > sets quality and player
-neovim       > cool plugins and sensible defaults
-ptpython     > interpreter colorscheme and keybindings
-
-includes     > additional colorschemes and scripts
 ```
 
 # management
 
-My dotfiles are managed using Stow, which is a lightweight symlink manager.
-
-## gnu stow
-
-GNU Stow is available from most package managers.
+My dotfiles are managed using [GNU Stow](https://www.gnu.org/software/stow/), which is a lightweight symlink manager. You can install it from most popular package managers:
 
 * `brew install stow`
 * `pacman -S stow`
 * `apt-get install stow`
 
-## installation
+# installation
 
-First, make sure that a `~/.config` directory exists on the local machine. To symlink dotfiles to your local machine from this repository, run `stow <application>` from the repository directory.
+First, make sure that a directory exists at `XDG_CONFIG_HOME` (by default, this should be `~/.config`). To symlink dotfiles to your local machine from this repository, simply run `stow <application name>` from the cloned `.dotfiles` directory.
 
