@@ -8,6 +8,7 @@ packages: [
   "gruvbox"
   "haskell-grammar"
   "highlight-selected"
+  "indent-guide-improved"
   "language-babel"
   "language-glsl"
   "language-ini"

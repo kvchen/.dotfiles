@@ -43,7 +43,7 @@
       "gruvbox"
     ]
   editor:
-    fontSize: 13
+    fontSize: 12
     invisibles: {}
     tabLength: 2
   "exception-reporting":
@@ -97,6 +97,14 @@
     columns: [
       80
       120
+    ]
+".js.jsx.source":
+  editor:
+    preferredLineLength: 100
+  "multi-wrap-guide":
+    columns: [
+      80
+      100
     ]
 ".python.source":
   editor:
