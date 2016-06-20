@@ -2,6 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Appearance
 Plug 'morhetz/gruvbox'
+Plug 'chriskempson/base16-vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'reedes/vim-colors-pencil', { 'for' : 'markdown' }
 
@@ -9,11 +10,13 @@ Plug 'reedes/vim-colors-pencil', { 'for' : 'markdown' }
 " Interface
 Plug 'justinmk/vim-sneak'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'terryma/vim-multiple-cursors'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'rking/ag.vim'
 Plug 'ervandew/supertab'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanss/vim-hackernews'
 
 
