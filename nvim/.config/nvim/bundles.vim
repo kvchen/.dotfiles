@@ -18,6 +18,7 @@ Plug 'ervandew/supertab'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanss/vim-hackernews'
+Plug 'vimwiki/vimwiki'
 
 
 " Git plugins
@@ -34,7 +35,7 @@ Plug 'scrooloose/nerdcommenter'
 " Language-specific plugins
 Plug 'tikhomirov/vim-glsl'
 Plug 'darthmall/vim-vue'
-" Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }

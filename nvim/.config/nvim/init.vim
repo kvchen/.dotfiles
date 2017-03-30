@@ -37,8 +37,8 @@ set scrolloff=3
 set shiftwidth=4
 set showcmd
 set smartcase
-set softtabstop=4
-set tabstop=4
+set softtabstop=2
+set tabstop=2
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu
 set wildmode=longest,list,full
